@@ -1,39 +1,38 @@
+import passwordValidatorImage from '../assets/password-validator.png'
 export default function Projects() {
 	return (
 		<section id="projects"
 				className="my-20 w-full flex flex-col gap-5 align-center max-w-5xl mx-auto">
-			<h2 className="text-5xl text-emerald-500 font-bold text-center">
+			<h2 className="text-center text-6xl text-white font-bold">
 				My Projects
 			</h2>
-			<div className="p-10 bg-emerald-200 flex flex-col justify-center items-center
+			<div className="p-10 bg-gradient-to-r from-fuchsia-500 to-pink-500 flex flex-col justify-center items-center
 							gap-5 lg:flex-row max-w-5xl mx-auto shadow transition 
 							hover:shadow-xl hover:scale-[102%] w-full">
 				<div className="w-80 rounded">
 					<a href=
-"https://www.geeksforgeeks.org/progress-tracker-using-react-and-local-storage/"
+"https://jyotikhot.github.io/password-validator/"
 						className="w-full h-full">
-						<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20230927120905/gfg.png"
+						<img src={passwordValidatorImage}
 							alt="Project 1"
 							className="w-full h-full 
 										bg-cover rounded"/>
 					</a>
 				</div>
 				<div className="flex flex-col align-center mx-auto gap-4 justify-center flex-1">
-					<h2 className="font-bold text-3xl text-center">
+					<h2 className="font-bold text-3xl text-center text-white">
 						<a className="hover:underline"
 							href=
-"https://www.geeksforgeeks.org/progress-tracker-using-react-and-local-storage/">
-							DSA Progress Tracker
+"https://jyotikhot.github.io/password-validator/">
+							Password Validator
 						</a>
 					</h2>
-					<p>
-						This is a project built on react which tracks your progess in dsa 
-						and stores that in the local storage.
+					<p className='text-white'>
+						This is a project built on react which validates the password. It have some predefined checks and if password passes all the checks it is considered as validated
 					</p>
 				</div>
 			</div>
-			<div className="p-10 bg-emerald-200 flex flex-col justify-center items-center gap-5 
+			{/* <div className="p-10 bg-emerald-200 flex flex-col justify-center items-center gap-5 
 							lg:flex-row-reverse max-w-5xl mx-auto shadow transition hover:shadow-xl 
 							hover:scale-[102%] w-full">
 				<div className="w-80 rounded">
@@ -61,7 +60,7 @@ export default function Projects() {
 						a direct neighbor of the empty tile.
 					</p>
 				</div>
-			</div>
+			</div> */}
 		</section>
 	);
 }
